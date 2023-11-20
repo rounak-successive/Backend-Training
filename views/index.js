@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { add, sub, mult, div } from './lib/Math.js'
+import { add, sub, mult, div } from '../lib/Math.js'
 
 const arg = process.argv.slice(2)
 const num1 = Number(arg[0])
