@@ -113,51 +113,57 @@ Key features of Express.js include:
 
 While Express.js is widely used, there are other frameworks in the Node.js ecosystem that cater to specific use cases:
 
-
 #### 1. Koa.js
 
 **Key Features:**
+
 - **Middleware Flow Control:** Koa.js uses a more modern middleware flow, making it more expressive and allowing developers to have more control over the flow of the application.
 - **Async/Await:** It embraces ECMAScript 2017 features, making it ideal for developers who prefer using async/await syntax for handling asynchronous operations.
 - **Modular Design:** Koa.js is designed to be more modular, allowing developers to pick and choose the components they need, making it lightweight and flexible.
 
 **Use Cases:**
+
 - Koa.js is well-suited for developers who prefer a more minimalistic and modern approach to web development.
 - It's often chosen for building APIs and lightweight web applications.
 
 #### 2. Hapi.js
 
 **Key Features:**
+
 - **Configuration-Driven:** Hapi.js places a strong emphasis on configuration, making it a good choice for developers who prefer a more opinionated and structured approach to development.
 - **Plugin System:** The framework is built around a powerful plugin system, allowing developers to easily extend and customize functionality.
 - **Input Validation:** Hapi.js provides built-in validation for incoming data, enhancing security by preventing common vulnerabilities.
 
 **Use Cases:**
+
 - Hapi.js is suitable for building robust and scalable applications, particularly those with complex business logic and a need for a well-structured codebase.
 - It's commonly used in enterprise-level applications.
 
 #### 3. Sails.js
 
 **Key Features:**
+
 - **MVC Architecture:** Sails.js follows the Model-View-Controller (MVC) architecture, making it easy to organize code and separate concerns.
 - **Real-Time Capabilities:** Sails.js is designed for applications that require real-time features, such as chat applications and collaborative tools.
 - **Data-Driven APIs:** It simplifies the creation of APIs by automatically generating routes based on data models.
 
 **Use Cases:**
+
 - Sails.js is a good choice for developers building data-driven applications that require real-time updates.
 - It's often used in projects where rapid development and a convention-over-configuration approach are preferred.
 
 #### 4. Nest.js
 
 **Key Features:**
+
 - **TypeScript Support:** Nest.js is built with TypeScript, providing strong typing and enhanced developer productivity.
 - **Modular Design:** It encourages a modular and scalable code structure through the use of modules.
 - **Dependency Injection:** Nest.js uses a dependency injection system, making it easier to manage and test components.
 
 **Use Cases:**
+
 - Nest.js is suitable for developers who prefer a framework that embraces TypeScript and follows Angular-inspired architectural patterns.
 - It's often chosen for building scalable server-side applications with a focus on maintainability.
-
 
 ## Why Frameworks are Necessary
 
@@ -194,4 +200,3 @@ Representational State Transfer (REST) is an architectural style for designing n
 6. **Representation**: Resources can have multiple representations, such as JSON or XML, and clients can negotiate the representation they prefer.
 
 By adhering to REST principles, developers can create scalable and interoperable APIs that are easy to understand and maintain.
-
