@@ -30,6 +30,6 @@ export const AddUserController = (req, res) => {
     res.json(users)
   } else {
     const { details } = error
-    res.status(409).json({ message: 'Invalid Input', details })
+    res.status(400).json({ message: 'Invalid Input', details })
   }
 }

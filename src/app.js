@@ -1,6 +1,8 @@
 import express from 'express'
 import data from './utils/mockData.js'
 import userRoutes from './routes/index.js'
+import errorHandlerMiddleware from './middleware/errorHandler.js'
+import createError from 'http-errors'
 
 const app = express()
 
@@ -14,4 +16,14 @@ app.get('/data', (req, res) => {
 
 app.use('/api', userRoutes)
 
-app.listen(3000)
+app.use((req, res, next) => {
+  next(createError(404, 'Not Found'))
+})
+
+app.use(errorHandlerMiddleware)
+
+const port = process.env.PORT || 3000
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`)
+})
